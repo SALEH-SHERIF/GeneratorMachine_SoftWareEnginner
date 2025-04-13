@@ -1,0 +1,1 @@
+C:\Users\midom\source\repos\GeneratorMachine\MachineDriverWrapper\x64\Debug\MachineDriverWrapper.vcxproj.AssemblyReference.cache

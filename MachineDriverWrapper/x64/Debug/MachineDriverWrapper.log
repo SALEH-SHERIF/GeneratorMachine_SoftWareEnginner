@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  MachineDriverWrapper.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  MachineDriverWrapper.vcxproj -> C:\Users\midom\source\repos\GeneratorMachine\x64\Debug\MachineDriverWrapper.dll

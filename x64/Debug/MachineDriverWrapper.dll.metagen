@@ -1,0 +1,22 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly MachineDriverWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MachinesWrapper.MachineDriverWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateSmallWheel(): PrivateScope, Public, Static, HideBySig
+    CreateBigWheel(): PrivateScope, Public, Static, HideBySig
+    CreateDoor(Int32): PrivateScope, Public, Static, HideBySig
+    CreateGlass(Int32): PrivateScope, Public, Static, HideBySig
+    CreateMotorPower(Int32): PrivateScope, Public, Static, HideBySig
+    CreateNormalWheel(): PrivateScope, Public, Static, HideBySig
+    CreateThinWheel(): PrivateScope, Public, Static, HideBySig
+    Assemble(String): PrivateScope, Public, Static, HideBySig
