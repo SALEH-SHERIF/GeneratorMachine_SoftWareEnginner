@@ -9,43 +9,25 @@ A full-scale Windows Forms desktop application that simulates a car manufacturin
 
 ---
 
-## 📦 Project Architecture
-CarManufacturingSystem/
-│
-├── Domain/
-│   ├── Entities/
-│   │   ├── Component.cs
-│   │   └── Car.cs
-│   │
-│   ├── Interfaces/
-│   │   ├── IComponentFactory.cs
-│   │   ├── IComponentRepository.cs
-│   │   ├── ICarRepository.cs
-│   │   └── IDllAssembler.cs
-│   │
-│   └── Enums/
-│       └── ComponentType.cs
-│
-├── Infrastructure/
-│   └── Repositories/
-│       ├── ComponentRepository.cs
-│       └── CarRepository.cs
-│
-├── Application/
-│   ├── Factories/
-│   │   └── ComponentFactory.cs
-│   │
-│   └── Services/
-│       └── CarAssemblerService.cs
-│
-├── UI/
-│   ├── Form1.cs
-│   └── Form1.Designer.cs
-│
-├── AssemblerDLL/
-│   └── Assembler.cs  // Exposes: void Assemble(List<string> instructions)
-│
-└── README.md
+### 📦 Project Architecture Summary
+
+| 📁 Folder / 📄 File                        | 📄 Description                                                                 |
+|------------------------------------------|-------------------------------------------------------------------------------|
+| `Domain/Entities/Car.cs`                 | Represents the assembled car entity.                                          |
+| `Domain/Entities/Component.cs`           | Represents the car components (Wheel, Door, etc).                             |
+| `Domain/Interfaces/ICarRepository.cs`    | Interface for car data access operations.                                     |
+| `Domain/Interfaces/IComponentRepository.cs` | Interface for component data access operations.                              |
+| `Domain/Interfaces/IComponentFactory.cs` | Interface for the factory that creates components.                            |
+| `Domain/Interfaces/IDllAssembler.cs`     | Interface to interact with the external DLL.                                  |
+| `Domain/Enums/ComponentType.cs`          | Enum for all component types (`Wheel`, `Motor`, etc.).                        |
+| `Infrastructure/Repositories/CarRepository.cs` | Concrete implementation to handle car storage.                         |
+| `Infrastructure/Repositories/ComponentRepository.cs` | Concrete implementation to handle component storage.             |
+| `Application/Factories/ComponentFactory.cs` | Implements factory logic to create component objects.                    |
+| `Application/Services/CarAssemblerService.cs` | Orchestrates assembling process, validations, and saving cars.         |
+| `UI/Form1.cs`                            | UI logic and events for user interaction.                                     |
+| `UI/Form1.Designer.cs`                   | Designer file that contains layout/controls of the form.                      |
+| `AssemblerDLL/Assembler.cs`              | Exposes `void Assemble(List<string> instructions)` to assemble the car.       |
+| `README.md`                              | Project documentation and architecture overview.                              |
 
 
 ---
