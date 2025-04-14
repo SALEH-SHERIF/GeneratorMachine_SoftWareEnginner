@@ -269,9 +269,9 @@ namespace GeneratorMachine
                 return;
             }
 
-            if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity < 1)
+            if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity < 1 || quantity > 1000000)
             {
-                MessageBox.Show("Number of components must be a valid integer greater than or equal to 1.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Number of components must be a valid (integer) at least 1 and at most 1000000 .", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtQuantity.Focus();
                 txtQuantity.SelectAll();
                 return;

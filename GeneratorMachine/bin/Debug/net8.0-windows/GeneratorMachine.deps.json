@@ -959,10 +959,7 @@
       },
       "MachineDriverWrapper/1.0.0": {
         "runtime": {
-          "MachineDriverWrapper.dll": {
-            "assemblyVersion": "1.0.9234.29111",
-            "fileVersion": "0.0.0.0"
-          }
+          "MachineDriverWrapper.dll": {}
         }
       }
     }

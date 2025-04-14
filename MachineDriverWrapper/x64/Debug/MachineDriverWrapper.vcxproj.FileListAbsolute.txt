@@ -1,1 +1,2 @@
 C:\Users\midom\source\repos\GeneratorMachine\MachineDriverWrapper\x64\Debug\MachineDriverWrapper.vcxproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\GeneratorMachine\GeneratorMachine\MachineDriverWrapper\x64\Debug\MachineDriverWrapper.vcxproj.AssemblyReference.cache

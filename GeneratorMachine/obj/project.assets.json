@@ -4750,24 +4750,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\midom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Acer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\midom\\source\\repos\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Downloads\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine.csproj",
       "projectName": "GeneratorMachine",
-      "projectPath": "C:\\Users\\midom\\source\\repos\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine.csproj",
-      "packagesPath": "C:\\Users\\midom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\midom\\source\\repos\\GeneratorMachine\\GeneratorMachine\\obj\\",
+      "projectPath": "C:\\Users\\Acer\\Downloads\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Acer\\Downloads\\GeneratorMachine\\GeneratorMachine\\GeneratorMachine\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\midom\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4781,8 +4776,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\midom\\source\\repos\\GeneratorMachine\\MachineDriverWrapper\\MachineDriverWrapper.vcxproj": {
-              "projectPath": "C:\\Users\\midom\\source\\repos\\GeneratorMachine\\MachineDriverWrapper\\MachineDriverWrapper.vcxproj"
+            "C:\\Users\\Acer\\Downloads\\GeneratorMachine\\GeneratorMachine\\MachineDriverWrapper\\MachineDriverWrapper.vcxproj": {
+              "projectPath": "C:\\Users\\Acer\\Downloads\\GeneratorMachine\\GeneratorMachine\\MachineDriverWrapper\\MachineDriverWrapper.vcxproj"
             }
           }
         }
@@ -4796,8 +4791,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -4841,7 +4835,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
