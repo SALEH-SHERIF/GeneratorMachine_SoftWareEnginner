@@ -1,4 +1,4 @@
-﻿using GeneratorMachine.DataAccess;
+﻿using GeneratorMachine.Models;
 
 namespace GeneratorMachine.Services.Factories;
 

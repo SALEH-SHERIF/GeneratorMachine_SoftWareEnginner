@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeneratorMachine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81caf17a70c57128f86896899d3f026d30455852")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff524df85abe9aa2fa5698dd0105a77f61abdbdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeneratorMachine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeneratorMachine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

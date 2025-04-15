@@ -1,7 +1,7 @@
 ﻿
 
 using System.Runtime.InteropServices;
-using GeneratorMachine.DataAccess;
+using GeneratorMachine.Models;
 using GeneratorMachine.Services.Helpers;
 using MachinesWrapper;
 namespace GeneratorMachine.Services.Factories.WheelFactories

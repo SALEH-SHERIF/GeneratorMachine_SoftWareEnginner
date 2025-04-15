@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GeneratorMachine.Models;
+using Microsoft.EntityFrameworkCore;
 namespace GeneratorMachine.DataAccess;
 
 public class ApplicationDbContext : DbContext 
 {
+    // define this class to EF this is table in DB
     public DbSet<Component> Components { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)

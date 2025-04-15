@@ -1,6 +1,4 @@
-﻿
-
-using GeneratorMachine.DataAccess;
+﻿using GeneratorMachine.Models;
 using MachinesWrapper;
 
 namespace GeneratorMachine.Services.Factories.DoorFactories;

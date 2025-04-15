@@ -1,4 +1,6 @@
-﻿namespace GeneratorMachine.DataAccess;
+﻿using GeneratorMachine.Models;
+
+namespace GeneratorMachine.DataAccess;
 
 public interface IComponentRepository
 {

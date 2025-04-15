@@ -1,4 +1,5 @@
 ﻿using GeneratorMachine.Services;
+using GeneratorMachine.Services.Helpers;
 using System;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -11,15 +12,16 @@ namespace GeneratorMachine
     public partial class MainForm : Form
     {
         private readonly IGeneratorService _generatorService;
-        private readonly BindingList<QueueItem> _queueItems = new BindingList<QueueItem>();
-        private readonly ConcurrentQueue<ComponentJob> _processingQueue = new ConcurrentQueue<ComponentJob>();
+        private readonly BindingList<IQueueItem> _queueItems ;
+        private readonly ConcurrentQueue<IComponentJob> _processingQueue;
         private BackgroundWorker _worker;
         private int _totalComponents;      // Total items in the current batch (fixed once added)
         private int _completedComponents;  // How many items have been completed
         private readonly object _counterLock = new object();
 
-        // UI Controls
-        private ComboBox cmbType;
+		// UI Controls
+		#region UI Controls
+		private ComboBox cmbType;
         private ComboBox cmbSubType;
         private TextBox txtQuantity;
         private Button btnAdd;
@@ -28,10 +30,14 @@ namespace GeneratorMachine
         private Button btnContinue;
         private Label lblStatus;
 
-        public MainForm(IGeneratorService creatorService)
+        #endregion
+
+        public MainForm(IGeneratorService creatorService , BindingList<IQueueItem> queueItems , ConcurrentQueue<IComponentJob> processingQueue)
         {
             _generatorService = creatorService ?? throw new ArgumentNullException(nameof(creatorService)); // Ensure service is not null
-            InitializeComponent();
+            _queueItems = queueItems;
+            _processingQueue = processingQueue;
+			InitializeComponent();
             SetupUI();
             InitializeWorker();
         }
@@ -415,29 +421,6 @@ namespace GeneratorMachine
             InitializeWorker();
         }
 
-        // Helper classes.
-        private class QueueItem
-        {
-            public string Type { get; }
-            public string SubType { get; }
-            public int Quantity { get; }
-            public int Completed { get; set; }
-
-            public string DisplayText => $"{Quantity}x {SubType} {Type} ({Completed}/{Quantity})";
-
-            public QueueItem(string type, string subType, int quantity)
-            {
-                Type = type;
-                SubType = subType;
-                Quantity = quantity;
-            }
-        }
-
-        private class ComponentJob
-        {
-            public string Type { get; set; }
-            public string SubType { get; set; }
-            public QueueItem ParentItem { get; set; }
-        }
+     
     }
 }

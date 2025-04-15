@@ -3,8 +3,11 @@ using GeneratorMachine.Services;
 using GeneratorMachine.Services.Factories;
 using GeneratorMachine.Services.Factories.DoorFactories;
 using GeneratorMachine.Services.Factories.WheelFactories;
+using GeneratorMachine.Services.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections.Concurrent;
+using System.ComponentModel;
 
 namespace GeneratorMachine
 {
@@ -44,13 +47,17 @@ namespace GeneratorMachine
             services.AddSingleton<IComponentFactory>(new GlassFactory(1, "Thick"));
             services.AddSingleton<IComponentFactory>(new GlassFactory(2, "5 Layers"));
             services.AddSingleton<IComponentFactory>(new GlassFactory(3, "Bullet Proof"));
+			services.AddSingleton(new BindingList<IQueueItem>());
+			services.AddSingleton(new ConcurrentQueue <IComponentJob>());
 
-            services.AddScoped<IGeneratorService, GeneratorService>();
+			services.AddScoped<IGeneratorService, GeneratorService>();
 
             services.AddScoped<MainForm>(provider =>
             {
                 var creatorService = provider.GetRequiredService<IGeneratorService>();
-                return new MainForm(creatorService);
+                var BinindingItem = provider.GetRequiredService < BindingList<IQueueItem>> ();
+                var ComponetJob = provider.GetRequiredService< ConcurrentQueue<IComponentJob>> ();
+				return new MainForm(creatorService , BinindingItem , ComponetJob);
             });
 
             using var serviceProvider = services.BuildServiceProvider();
